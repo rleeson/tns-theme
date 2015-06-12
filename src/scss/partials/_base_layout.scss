@@ -1,0 +1,7 @@
+/* Base Layout Elements
+--------------------------*/
+
+#viewport {
+	@include container-fixed( 0 );
+	max-width: $screen-lg;
+}

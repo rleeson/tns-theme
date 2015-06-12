@@ -1,0 +1,13 @@
+/**
+ * Base theme Bootstrap CSS
+ * 
+ * @since 1.0.0
+ * @package Things & Stuff
+ * @author Ryan Leeson
+ */
+
+// Overriding default Bootstrap variables
+@import 'partials/bootstrap_variables';
+
+// Path to Bower Bootstrap
+@import 'bootstrap-sass/assets/stylesheets/bootstrap';
