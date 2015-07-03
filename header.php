@@ -15,8 +15,14 @@
 <head>
 	<?php wp_head(); ?>
 </head>
-<body>
+<body class="<?php body_class();?>">
+	<div id="side-menu" class="collapse">
+		<?php wp_list_categories(); ?>
+	</div>
 	<div id="viewport">
-		<header>Header</header>
-		<nav>Navigation</nav>
+		<header class="site-header">
+			<h1><?php bloginfo( 'title' ); ?></h1>
+			<h2><?php bloginfo( 'description' ); ?></h2>
+			<nav><?php wp_nav_menu( array( 'slug' => 'tns-main' ) ); ?></nav> 
+		</header>
 		<div id="main-content">

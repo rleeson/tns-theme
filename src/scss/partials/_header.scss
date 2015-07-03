@@ -1,0 +1,26 @@
+/* Site Header
+---------------------*/
+
+header.site-header {
+	background-color: $grey-light;
+	
+	h1, h2 {
+		text-align: center;
+	}
+	nav {
+		@include center-block();
+		display: table;
+		max-width: 600px;
+		margin: 1em 0;
+		
+		ul {
+			display: table-row;
+			padding: 0;
+			
+			li {
+				display: table-cell;
+				padding: 0 1.5em;
+			}
+		}
+	}	
+}

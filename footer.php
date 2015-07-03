@@ -14,5 +14,6 @@
  		</div> <!-- End main-content -->
 		<footer>Footer Area</footer>
 	</div> <!-- End viewport -->
+<?php wp_footer(); ?>
 </body>
 </html>

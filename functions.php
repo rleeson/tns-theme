@@ -17,3 +17,11 @@ function tns_script_include() {
 	wp_enqueue_script( 'tns-main-js', get_template_directory_uri() . '/js/main.js', array( 'bootstrap-js' ), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'tns_script_include' );
+
+function tns_init() {
+	register_nav_menus(array(
+		'tns-main'	=> 'Header Navigation'
+	));
+}
+
+tns_init();
