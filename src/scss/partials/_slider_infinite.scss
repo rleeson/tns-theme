@@ -1,0 +1,51 @@
+/* Slider Styles
+-------------------*/
+.slider-infinite {
+	@include clearfix();
+	height: 180px; 				// Set max height of slider
+	margin: 3vw 0;
+	padding: 0 8%;
+	
+	@media ( min-width: $screen-sm ) {
+		padding: 0 6%;
+	}		
+	@media ( min-width: $screen-md ) {
+		padding: 0 4%;
+	}
+	// Container for the slides and controls
+	.slider-body {
+		// Container for each item/slides
+		.slide {
+			text-align: center;
+			width: 50%;
+			
+			@media ( min-width: $screen-sm ) {
+				width: 33.33%;
+			}
+			@media ( min-width: $screen-md ) {
+				width: 25%;
+			}
+			a {
+				background-color: $grey;
+				border: 2px solid $black;
+				color: $white;
+				display: block;
+				height: 100%;
+			}
+			&:nth-child( even ) a {
+				background-color: $grey-medium;
+			}
+		}
+	}
+	.slide-left,
+	.slide-right {
+		width: 8%;
+
+		@media ( min-width: $screen-sm ) {
+			width: 6%;
+		}		
+		@media ( min-width: $screen-md ) {
+			width: 4%;
+		}
+	}
+}
