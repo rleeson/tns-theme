@@ -1,5 +1,8 @@
 /* Base Layout Elements
 --------------------------*/
+html, body {
+	background-color: $grey;
+}
 #viewport {
 	@include container-fixed( 0 );
 	max-width: $screen-lg;

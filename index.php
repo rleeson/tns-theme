@@ -14,6 +14,14 @@ get_header();
 ?>
 	<div class="content">
 		<h1>Content Area</h1>
+		<!-- #slider-astronomy.slider-infinite>div.slide-mask>button.slide-left+div.slider-body+button.slide-right -->
+		<div id="slider-astronomy" class="slider-infinite">
+			<div class="slide-mask">
+				<button class="slide-left"></button>
+				<div class="slider-body"><?php get_template_part( 'templates/content', 'tns-astronomy' ); ?></div>
+				<button class="slide-right"></button>
+			</div>
+		</div>
 		<!-- #slider-2.slider-infinite>button.slide-left+div.slider-body>article.slide*14>a{Item $}^^button.slide-right -->
 		<div id="slider-2" class="slider-infinite">
 			<div class="slide-mask">

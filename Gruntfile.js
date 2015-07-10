@@ -42,6 +42,14 @@ module.exports = function( grunt ){
         		}
         	}
         },
+        copy: {
+        	colorbox: {
+        		expand: true,
+        		flatten: true,
+        		src: 'bower_components/jquery-colorbox/jquery.colorbox-min.js', 
+        		dest: 'js/'
+        	}
+        },
         // Minification of CSS files
         cssmin: {
             options: {
@@ -80,4 +88,5 @@ module.exports = function( grunt ){
     grunt.registerTask( 'buildjs', [ 'concat', 'uglify' ] );
     grunt.registerTask( 'buildcss', [ 'compass', 'cssmin' ] );
     grunt.registerTask( 'buildall', [ 'buildcss', 'buildjs' ] );
+    grunt.registerTask( 'setupenv', [ 'buildall', 'copy:colorbox' ] );
 };
